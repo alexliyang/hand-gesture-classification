@@ -1,6 +1,5 @@
 # hand-gesture-classification
-CS165a Programming Assignment 2  
-Andrew Lai 9519687
+CS165a Programming Assignment 2, Andrew Lai 9519687
 
 
 # Histogram of Oriented Gradients (HOG) Metrics
@@ -219,5 +218,5 @@ ROC Curve:
 
 
 # Analysis
-The Deep Convolutional Neural Network outperformed the HOG classifier by a large margin, in terms of accuracy.
+The Deep Convolutional Neural Network outperformed the HOG classifier by a large margin, in terms of accuracy; from the corresponding confusion matrices, the deep learning classifiers produced far fewer false positives as compared to the HOG classifiers, though the K-Nearest Neighbors HOG Classifier was relatively accurate.
 
