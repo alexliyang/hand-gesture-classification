@@ -2,7 +2,7 @@
 CS165a Programming Assignment 2, Andrew Lai 9519687
 
 # Histogram of Oriented Gradients (HOG) Metrics
-[Jupyter Notebook Link](.../hand-gesture-classification/HOG.ipynb)
+[Jupyter Notebook Link](HOG.ipynb)
 ### Support Vector Machine Classifier
 Accuracy: 0.65570719603  
 Confusion Matrix:
@@ -112,7 +112,7 @@ The average score for 5-Fold Cross Validation for the SVM classifier was 0.57, w
 
 
 # Deep Learning Metrics
-[Jupyter Notebook Link](.../hand-gesture-classification/DeepFeatures.ipynb)
+[Jupyter Notebook Link](DeepFeatures.ipynb)
 ### Support Vector Machine Classifier
 Accuracy: 0.97952853598  
 Confusion Matrix:
