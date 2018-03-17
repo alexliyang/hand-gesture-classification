@@ -7,6 +7,7 @@ Andrew Lai 9519687
 ### Support Vector Machine Classifier
 Accuracy: 0.65570719603  
 Confusion Matrix:  
+```
 [[59  1  0  0  0  0  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0
    0  0]  
  [14 14  0  8  0  0  2  0  0 15  0  2  2  0  1  0  0  0  0  3  0  0  1  0
@@ -59,6 +60,7 @@ Confusion Matrix:
   56  0]  
  [ 1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  4  1  0  0
    7 49]]  
+```
 ROC Curve:  
 ![HOG Support Vector Machine](https://i.imgur.com/uX4cvq1.png)
 
@@ -66,6 +68,7 @@ ROC Curve:
 ### Gaussian Naive Bayes Classifier
 Accuracy: 0.844913151365  
 Confusion Matrix:  
+```
 [[58  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
    0  0]  
  [ 3 41  2 10  0  0  2  0  0  2  0  0  0  0  1  0  0  0  0  0  0  0  0  0
@@ -118,6 +121,7 @@ Confusion Matrix:
   53  1]  
  [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  3  0  0
    0 59]]  
+```
 ROC Curve:  
 ![HOG Naive Bayes Classifier](https://i.imgur.com/Sillntq.png)
 
@@ -125,6 +129,7 @@ ROC Curve:
 ### K-Nearest Neighbors Classifier using 3 Neighbors
 Accuracy: 0.980148883375  
 Confusion Matrix:  
+```
 [[62  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
    0  0]  
  [ 0 62  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
@@ -177,6 +182,7 @@ Confusion Matrix:
   61  0]  
  [ 0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
    0 61]]  
+```
 ROC Curve:  
 ![HOG K-Nearest Neighbors](https://i.imgur.com/Tqdff8c.png) 
 
@@ -188,6 +194,7 @@ The average score for 5-Fold Cross Validation for the SVM classifier was 0.57, w
 ### Support Vector Machine Classifier
 Accuracy: 0.97952853598  
 Confusion Matrix:  
+```
 [[59  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
    0  0]  
  [ 0 62  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
@@ -240,6 +247,7 @@ Confusion Matrix:
   62  0]  
  [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
    0 62]]  
+```
 ROC Curve:  
 ![Deep Learning SVM](https://i.imgur.com/STcobvX.png)
 
@@ -247,6 +255,7 @@ ROC Curve:
 ### Gaussian Naive Bayes Classifier
 Accuracy: 0.954094292804  
 Confusion Matrix:  
+```
 [[59  0  0  0  0  0  0  0  0  0  3  0  0  0  0  0  0  0  0  0  0  0  0  0
    0  0]  
  [ 0 57  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  3
@@ -299,6 +308,7 @@ Confusion Matrix:
   61  0]  
  [ 0  0  0  0  0  0  0  0  0  0  0  0  1  0  1  0  0  0  0  0  0  0  0  0
    0 60]]  
+```
 ROC Curve:  
 ![Deep Learning NBC](https://i.imgur.com/6LJ0vzT.png)
 
@@ -306,6 +316,7 @@ ROC Curve:
 ### K-Nearest Neighbors Classifier using 3 Neighbors
 Accuracy: 0.978908188586  
 Confusion Matrix:  
+```
 [[59  0  0  0  0  0  0  0  0  0  3  0  0  0  0  0  0  0  0  0  0  0  0  0
    0  0]  
  [ 0 62  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
@@ -358,6 +369,7 @@ Confusion Matrix:
   62  0]  
  [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
    0 62]]  
+```
 ROC Curve:  
 ![Deep Learning K-Nearest Neighbors](https://i.imgur.com/22FD0Z2.png)
 
