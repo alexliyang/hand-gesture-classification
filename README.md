@@ -40,7 +40,7 @@ Confusion Matrix:
  [ 0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  1  0  0   1 59]]
 ```
 ROC Curve:  
-![HOG Support Vector Machine](https://i.imgur.com/iHT6VqU.png)
+![HOG Support Vector Machine](https://i.imgur.com/FJfmnnl.png)
 
 ### 5-Fold Cross Validation for HOG SVM:
 The average score for 5-Fold Cross Validation for the linear SVM classifier was 0.75, with a standard deviation of .05.
@@ -77,7 +77,7 @@ Confusion Matrix:
  [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  3  0  0   0 59]]  
 ```
 ROC Curve:  
-![HOG Naive Bayes Classifier](https://i.imgur.com/Sillntq.png)
+![HOG Naive Bayes Classifier](https://i.imgur.com/XLpZKc1.png)
 
 
 ### K-Nearest Neighbors Classifier using 3 Neighbors
@@ -112,7 +112,7 @@ Confusion Matrix:
  [ 0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0   0 61]]  
 ```
 ROC Curve:  
-![HOG K-Nearest Neighbors](https://i.imgur.com/Tqdff8c.png) 
+![HOG K-Nearest Neighbors](https://i.imgur.com/IspUMYC.png) 
 
 
 # Deep Learning Metrics
@@ -149,7 +149,7 @@ Confusion Matrix:
  [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0   0 62]]
 ```
 ROC Curve:  
-![Deep Learning SVM](https://i.imgur.com/k6XDX9T.png)
+![Deep Learning SVM](https://i.imgur.com/wImX6Mq.png)
 
 
 ### Gaussian Naive Bayes Classifier
@@ -184,7 +184,7 @@ Confusion Matrix:
  [ 0  0  0  0  0  0  0  0  0  0  0  0  1  0  1  0  0  0  0  0  0  0  0  0   0 60]]  
 ```
 ROC Curve:  
-![Deep Learning NBC](https://i.imgur.com/6LJ0vzT.png)
+![Deep Learning NBC](https://i.imgur.com/HrgNn4r.png)
 
 
 ### K-Nearest Neighbors Classifier using 3 Neighbors
@@ -219,6 +219,6 @@ Confusion Matrix:
  [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0   0 62]]  
 ```
 ROC Curve:  
-![Deep Learning K-Nearest Neighbors](https://i.imgur.com/22FD0Z2.png)
+![Deep Learning K-Nearest Neighbors](https://i.imgur.com/kV4g0sl.png)
 
 
