@@ -1,5 +1,5 @@
 # hand-gesture-classification
-CS165a Andrew Lai
+CS165a Andrew Lai  
 [Python Code](sandbox.py)
 
 # Analysis
