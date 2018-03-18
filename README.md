@@ -1,5 +1,6 @@
 # hand-gesture-classification
-CS165a Programming Assignment 2, Andrew Lai 9519687
+CS165a Andrew Lai
+[Python Code](sandbox.py)
 
 # Analysis
 The Deep Convolutional Neural Network classifiers outperformed the HOG classifiers in terms of accuracy; from looking at the confusion matrices, it's clear that the deep learning features outperform HOG features for these models because they result in far fewer false positives.
