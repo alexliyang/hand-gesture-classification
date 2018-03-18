@@ -4,7 +4,7 @@ CS165a Programming Assignment 2, Andrew Lai 9519687
 # Analysis
 The Deep Convolutional Neural Network classifiers outperformed the HOG classifiers in terms of accuracy; from looking at the confusion matrices, it's clear that the deep learning features outperform HOG features for these models because they result in far fewer false positives.
 
-The K-nearest neighbors classifier was the most accurate for the HOG features; on the other hand, the linear SVM classifier was more accurate than K-nearest neighbors on the deep learning features, likely because the deep learning features have fewer but more complex data points than the HOG features. With both features, a consistent problem with KNN is that while it runs a bit more slowly than the other classifiers.
+The K-nearest neighbors classifier was the most accurate for the HOG features; on the other hand, the linear SVM classifier was more accurate than K-nearest neighbors on the deep learning features, likely because the deep learning features have fewer but more complex data points than the HOG features. With both features, a consistent problem with KNN is that while it runs a bit more slowly than the other classifiers, and is sensitive to outliers, as can be seen in the deep learning confusion matrices.
 
 # Histogram of Oriented Gradients (HOG) Metrics
 [Jupyter Notebook for HOG Classifiers](HOG.ipynb)
