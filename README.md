@@ -1,42 +1,49 @@
 # hand-gesture-classification
 CS165a Programming Assignment 2, Andrew Lai 9519687
 
+# Analysis
+The Deep Convolutional Neural Network classifiers outperformed the HOG classifiers in terms of accuracy; from looking at the confusion matrices, it's clear that the deep learning features outperform HOG features for these models because they result in far fewer false positives.
+
+The K-nearest neighbors classifier was the most accurate for the HOG features; on the other hand, the linear SVM classifier was more accurate than K-nearest neighbors on the deep learning features, likely because the deep learning features have fewer but more complex data points than the HOG features. With both features, a consistent problem with KNN is that while it runs a bit more slowly than the other classifiers.
+
 # Histogram of Oriented Gradients (HOG) Metrics
 [Jupyter Notebook for HOG Classifiers](HOG.ipynb)
 ### Support Vector Machine Classifier
-Accuracy: 0.844913151365  
+Accuracy: 0.833746898263 
 Confusion Matrix:
 ```
-[[58  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0   0  0]
- [ 3 41  2 10  0  0  2  0  0  2  0  0  0  0  1  0  0  0  0  0  0  0  0  0   1  0]
- [ 0  2 43  4  1  0  0  0  1  3  0  2  0  0  3  0  0  0  0  0  2  0  0  1   0  0]
- [ 0  8  4 31  1  0  5  0  0  4  0  0  3  0  0  0  0  0  0  1  0  0  3  2   0  0]
- [ 0  2  0  0 45  2  0  0  0  0  0  0  2  1  2  0  0  1  0  1  1  0  1  4   0  0]
- [ 0  1  0  0  1 57  0  0  0  0  0  0  1  1  0  0  0  0  0  0  0  0  1  0   0  0]
- [ 2  0  0  0  0  0 60  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0   0  0]
- [ 0  1  0  0  0  1  0 50  0  0  0  0  0  0  0  5  0  3  0  0  1  0  1  0   0  0]
- [ 0  0  0  0  0  0  0  0 61  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0   0  0]
- [ 0  1  0  1  0  0  0  0  0 54  0  0  2  0  1  0  0  0  0  0  0  0  2  1   0  0]
- [ 0  0  0  0  0  0  0  0  0  0 58  0  0  0  2  0  0  0  0  0  2  0  0  0   0  0]
- [ 3  0  0  0  0  0  0  0  0  0  0 58  0  0  0  0  0  0  0  0  1  0  0  0   0  0]
- [ 0  2  0  0  3  4  1  1  0  1  1  0 46  0  2  0  0  0  0  0  0  0  0  1   0  0]
- [ 0  0  0  5  1  9  3  0  0  0  0  0  4 34  0  0  0  0  0  6  0  0  0  0   0  0]
- [ 0  3  0  3  0  0  0  0  0  0  0  0  0  0 54  0  0  0  0  0  2  0  0  0   0  0]
- [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 61  0  1  0  0  0  0  0  0   0  0]
- [ 0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  1 60  0  0  0  0  0  0  0   0  0]
- [ 0  0  0  0  0  1  0  0  0  0  0  0  0  1  0  0  3 57  0  0  0  0  0  0   0  0]
- [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 62  0  0  0  0  0   0  0]
- [ 0  0  1  1  0  0  1  0  0  0  0  0  0  0  1  2  0  1  0 55  0  0  0  0   0  0]
- [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 62  0  0  0   0  0]
+[[62  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0   0  0]
+ [ 4 35  0  0  0  0  1  4  0  5  3  1  0  0  1  0  4  0  0  2  0  0  1  0   1  0]
+ [ 0  0 45  0  0  0  0  0  0  3  0  9  1  0  1  0  0  0  0  0  3  0  0  0   0  0]
+ [ 2  5  3 29  0  0  3  0  0  2  3  2  6  1  1  0  0  0  0  0  3  0  2  0   0  0]
+ [ 0  0  0  0 33 12  1  0  0  2  0  0  3  4  1  1  0  0  0  1  1  0  2  0   0  1]
+ [ 0  0  0  0  0 48  0  0  0  0  0  0  1  1  0  0  5  3  1  0  1  0  0  0   0  2]
+ [ 0  0  0  0  0  0 60  0  1  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0   0  0]
+ [ 0  0  0  0  0  0  1 45  1  0  0  0  0  0  0  3  2  0  0  2  2  0  0  0   6  0]
+ [ 0  0  0  0  0  0  0  0 60  0  0  0  0  0  0  0  1  0  0  0  0  1  0  0   0  0]
+ [ 0  0  1  0  0  0  1  0  0 59  0  0  0  0  0  0  0  0  0  0  0  0  0  0   1  0]
+ [ 0  0  0  0  0  0  0  0  0  0 62  0  0  0  0  0  0  0  0  0  0  0  0  0   0  0]
+ [ 1  0  0  0  0  0  0  0  1  0  0 60  0  0  0  0  0  0  0  0  0  0  0  0   0  0]
+ [ 0  0  0  0  0  7  0  0  0  2  1  0 48  0  0  2  0  0  2  0  0  0  0  0   0  0]
+ [ 0  0  0  1  0  5  3  0  0  0  0  0  2 37  0  0  0  3  0 10  0  0  0  0   0  1]
+ [ 0  0  0  0  0  0  3  0  0  2  2  0  0  0 54  0  0  0  0  0  1  0  0  0   0  0]
+ [ 0  0  0  0  0  1  0  0  0  0  0  0  0  0  0 59  0  1  0  1  0  0  0  0   0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 62  0  0  0  0  0  0  0   0  0]
+ [ 0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  7 53  0  0  0  0  0  0   0  1]
+ [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1 61  0  0  0  0  0   0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 62  0  0  0  0   0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  0  0  0  0  0 60  0  0  0   0  0]
  [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 62  0  0   0  0]
- [ 0  3  0  5  1  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0 52  0   0  0]
- [ 4 14  0  4  0  0  0  0  0  2  0  0  0  0  8  0  0  0  0  0  1  0  0 29   0  0]
- [ 4  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  53  1]
- [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  3  0  0   0 59]]  
+ [ 0  0  0  0  1  0  0  0  0  1  1  0  0  0  2  0  0  0  2  0  0  0 49  0   4  2]
+ [ 7  4  0  0  0  0  2  2  0  6  0  0  0  0  4  0  0  0  0  5  3  0  7 18   4  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  62  0]
+ [ 0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  1  0  0   1 59]]
 ```
 ROC Curve:  
-![HOG Support Vector Machine](https://i.imgur.com/qXmviZq.png)
+![HOG Support Vector Machine](https://i.imgur.com/iHT6VqU.png)
 
+### 5-Fold Cross Validation for HOG SVM:
+The average score for 5-Fold Cross Validation for the linear SVM classifier was 0.75, with a standard deviation of .05.
 
 ### Gaussian Naive Bayes Classifier
 Accuracy: 0.844913151365  
@@ -106,9 +113,6 @@ Confusion Matrix:
 ```
 ROC Curve:  
 ![HOG K-Nearest Neighbors](https://i.imgur.com/Tqdff8c.png) 
-
-### 5-Fold Cross Validation for SVM:
-The average score for 5-Fold Cross Validation for the SVM classifier was 0.57, with a standard deviation of .09
 
 
 # Deep Learning Metrics
@@ -217,7 +221,4 @@ Confusion Matrix:
 ROC Curve:  
 ![Deep Learning K-Nearest Neighbors](https://i.imgur.com/22FD0Z2.png)
 
-
-# Analysis
-The Deep Convolutional Neural Network outperformed the HOG classifier by a large margin, in terms of accuracy; from the corresponding confusion matrices, the deep learning classifiers produced far fewer false positives as compared to the HOG classifiers, though the K-Nearest Neighbors HOG Classifier was relatively accurate.
 
